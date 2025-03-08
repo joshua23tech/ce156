@@ -16,7 +16,9 @@ def current_age():
                     if formatted_dob < date_today:
                         days_in_year = 365.2425
                         age = int((date_today - formatted_dob).days / days_in_year)
-                        return f"Today on {str(date_today.day) + "/" + str(date_today.month) + "/" + str(date_today.year)} the User is {age}"
+                        str_msg_1 = f"Today on {str(date_today.day) + "/" + str(date_today.month) + "/" + str(date_today.year)} the User is {age} years"
+                        str_msg_2 = f"The User's date of birth in the European format is: {lst_chars_dob[1] + "/" + lst_chars_dob[0] + "/" + lst_chars_dob[2]}"
+                        return (str_msg_1 + "\n" + str_msg_2)
 
     return f"The date of birth you have entered of {str_dob} is inappropriate"
 
