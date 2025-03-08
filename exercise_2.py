@@ -36,7 +36,7 @@ def prime_numbers():
         n = 10
         lst_prime_numbers_chunks_of_ten = [lst_prime_numbers[i: i + n] for i in range(0, len(lst_prime_numbers), n)]
         for ele in lst_prime_numbers_chunks_of_ten:
-            print(ele)
+            print(f"Number of values in this output statement: {len(ele)} - {ele}")
         return "Exercise 2 is now complete"
     return "At least one of the values you have entered are inappropriate"
 
